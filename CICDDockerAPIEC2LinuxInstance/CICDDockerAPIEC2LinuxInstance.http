@@ -1,0 +1,6 @@
+@CICDDockerAPIEC2LinuxInstance_HostAddress = http://localhost:5082
+
+GET {{CICDDockerAPIEC2LinuxInstance_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
