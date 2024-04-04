@@ -1,0 +1,9 @@
+name: Docker CICD Pipeline
+on:
+ push:
+  branches:
+     - master
+
+jobs:
+ build-test-deploy:
+  runs-on: self-hosted
