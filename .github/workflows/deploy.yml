@@ -48,3 +48,6 @@ jobs:
           file: ./CICDDockerAPIEC2LinuxInstance/Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/cicd-dockerpipelineex:latest, ${{ secrets.DOCKERHUB_USERNAME }}/cicd-dockerpipelineex:${{ github.run_number }}
+      #-
+        #name: Deploy to EC2 instance
+        #uses: appleboy/ssh-action@master
