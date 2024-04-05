@@ -17,9 +17,9 @@ jobs:
      run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
      
    - name: Build  the Docker image
-     run: docker build -t cicd-pipeline
+     run: docker build -t cicd-dockerpipelineex
    - name: Push to dockerhub
-     run: docker push swagi/cicd-pipeline:latest
+     run: docker push swagi/cicd-dockerpipelineex:latest
     
      
      
