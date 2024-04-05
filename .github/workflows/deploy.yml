@@ -53,7 +53,7 @@ jobs:
         #uses: appleboy/ssh-action@master
  deploy:
   needs: docker
-  runs-on: [aws-ec2]
+  runs-on: self-hosted
   steps:
     - name: pull image from docker
       run: docker pull swagatika10/cicd-dockerpipelineex:latest
