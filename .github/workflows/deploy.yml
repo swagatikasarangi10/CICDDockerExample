@@ -45,6 +45,6 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          file: ./CICDDockerAPIEC2LinuxInstance.API/Dockerfile
+          file: ./CICDDockerAPIEC2LinuxInstance/Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/cicd-dockerpipelineex:latest, ${{ secrets.DOCKERHUB_USERNAME }}/cicd-dockerpipelineex:${{ github.run_number }}
